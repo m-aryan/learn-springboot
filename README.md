@@ -1,8 +1,3 @@
-# Read Me First
-The following was discovered as part of building this project:
-
-* The original package name 'com.learnspring.content-calender' is invalid and this project uses 'com.learnspring.content_calender' instead.
-
 # Getting Started
 
 ### Reference Documentation
