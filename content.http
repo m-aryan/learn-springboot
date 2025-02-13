@@ -1,0 +1,43 @@
+############# Can be used for API Testing IntelliJ Ultimate else use POSTMAN #############
+
+
+### Find All Content
+GET http://localhost:8080/api/content
+
+### Get Content by ID
+GET http://localhost:8080/api/content
+
+### Create new Content
+POST http://localhost:8080/api/content
+Content-Type: application/json
+
+{
+    "id": 1,
+    "title": "My Second Piece of Content",
+    "desc": "This is a Test Piece of Content",
+    "status": "IDEA",
+    "contentType": "ARTICLE",
+    "dateCreated": "2025-01-30T04:42:17.619+00:00",
+    "dateUpdated": null,
+    "url": ""
+}
+
+
+### Update Existing Content
+PUT http://localhost:8080/api/content/1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "title": "My First Piece of Content",
+    "desc": "This is a Test Piece of Content",
+    "status": "IDEA",
+    "contentType": "ARTICLE",
+    "dateCreated": "2025-01-30T04:42:17.619+00:00",
+    "dateUpdated": null,
+    "url": "http:localhost:8080/my-first-blog-post"
+}
+
+
+### Delete by id
+DELETE http://localhost:8080/api/content/1

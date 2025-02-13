@@ -2,8 +2,14 @@ package com.learnspring.content_calender.model;
 
 import java.time.LocalDateTime;
 
+import jakarta.validation.constraints.NotEmpty;
+
+
+
 public record Content(
-        Integer Id,
+        Integer id,
+
+        @NotEmpty
         String title,
         String desc,
         Status status,
@@ -12,5 +18,5 @@ public record Content(
         LocalDateTime dateUpdated,
         String url
 ) {
-
+        
 }
